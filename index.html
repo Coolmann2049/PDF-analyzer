@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Document Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Document Analysis</h1>
+        <input type="file" id="pdfFile" accept=".pdf">
+        <button id="analyzeButton" disabled>Analyze Document</button>
+        <div id="loading" style="display: none;">Analyzing...</div>
+
+        <div class="main-content">
+            <div class="side-panel left-panel">
+                <h2>SWOT Analysis</h2>
+                <pre id="swotOutput"></pre>
+                <h2>Competitor Strategy</h2>
+                <pre id="strategyOutput"></pre>
+                <h2>Competitor Profile</h2>
+                <pre id="profileOutput"></pre>
+            </div>
+            <div class="center-panel">
+                <h2>Key Analysis</h2>
+                <pre id="keyAnalysisOutput"></pre>
+                <h2>Summary</h2>
+                <pre id="summaryOutput"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
